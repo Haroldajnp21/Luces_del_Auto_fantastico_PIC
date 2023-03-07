@@ -1,4 +1,4 @@
-MPASM 5.77                               A.S   3-7-2023  15:32:53         PAGE  1
+MPASM 5.77                               A.S   3-7-2023  17:01:30         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -1216,12 +1216,12 @@ MESSAGE[308]: WARNING LEVEL SUPERSEDED BY COMMAND LINE VALUE. (2)
   00000002            01217 ram_bank = 2
 002C   0187           01218     clrf CM1CON0
 002D   0188           01219     clrf CM2CON0
-  0000002E            01220 F1_000028 equ $ ; IN [AUTOFANTASTICO.BAS] TRISB = 0: TRISB=0: ANSEL=0 : ANSELH=0
+  0000002E            01220 F1_000028 equ $ ; IN [AUTOFANTASTICO.BAS] TRISB = 0: TRISC=0: ANSEL=0 : ANSELH=0
 002E   1683           01221     bsf STATUS,5
 002F   1303           01222     bcf STATUS,6
   00000001            01223 ram_bank = 1
 0030   0186           01224     clrf TRISB
-0031   0186           01225     clrf TRISB
+0031   0187           01225     clrf TRISC
 0032   1703           01226     bsf STATUS,6
   00000003            01227 ram_bank = 3
 0033   0188           01228     clrf ANSEL
@@ -1405,7 +1405,7 @@ MESSAGE[308]: WARNING LEVEL SUPERSEDED BY COMMAND LINE VALUE. (2)
 2007   3FFF           01407 __config _config1, FOSC_EXTRC_CLKOUT&WDTE_ON&PWRTE_OFF&MCLRE_ON&CP_OFF&CPD_OFF&BOREN_ON&IESO_ON&FCMEN_ON&LVP_ON&DEBUG_OFF
 2008   3FFF           01408 __config _config2, BOR4V_BOR40V&WRT_OFF
                       01409     end
-MPASM 5.77                               A.S   3-7-2023  15:32:53         PAGE  2
+MPASM 5.77                               A.S   3-7-2023  17:01:30         PAGE  2
 
 
 SYMBOL TABLE

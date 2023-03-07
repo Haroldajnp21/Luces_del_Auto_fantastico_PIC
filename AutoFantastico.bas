@@ -25,7 +25,7 @@ Declare Xtal 20
 Dim I As Byte 
 Dim V As Word ;Variable que maneja a los 16 leds 
 
-TRISB = 0: TRISB=0: ANSEL=0 : ANSELH=0
+TRISB = 0: TRISC=0: ANSEL=0 : ANSELH=0
 
 PORTB=0 : PORTC=0
  

@@ -1211,12 +1211,12 @@ ram_bank = 3
 ram_bank = 2
     clrf CM1CON0
     clrf CM2CON0
-F1_000028 equ $ ; IN [AUTOFANTASTICO.BAS] TRISB = 0: TRISB=0: ANSEL=0 : ANSELH=0
+F1_000028 equ $ ; IN [AUTOFANTASTICO.BAS] TRISB = 0: TRISC=0: ANSEL=0 : ANSELH=0
     bsf STATUS,5
     bcf STATUS,6
 ram_bank = 1
     clrf TRISB
-    clrf TRISB
+    clrf TRISC
     bsf STATUS,6
 ram_bank = 3
     clrf ANSEL
